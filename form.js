@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 // Добавляем номер в массив и сохраняем
                 submittedPhones.push(currentPhone);
                 localStorage.setItem('submittedPhones', JSON.stringify(submittedPhones));
-                window.location.href = '/thank-you.html';
+                window.location.href = 'thank-you.html';
             }
         } catch (error) {
             console.error('Ошибка:', error);
