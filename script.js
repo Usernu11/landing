@@ -23,5 +23,3 @@ burger.addEventListener('click', () => {
 
     }
 })
-
-// console.log(menu.classList.contains('disable'))
