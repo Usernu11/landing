@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Проверяем текущий номер при загрузке
     if (submittedPhones.includes(phoneInput.value)) {
         disableSubmitButton()
-    }
+    } 
 
     form.addEventListener('submit', async function (event) {
         event.preventDefault()  // Отключаем перезагрузку страницы
@@ -71,4 +71,10 @@ document.addEventListener('DOMContentLoaded', function () {
         submitButton.textContent = 'Форма уже отправлена'
         submitButton.style.backgroundColor = '#ccc'
     }
+
+    function enableSubmitButton() { 
+        submitButton.disabled = false
+        submitButton.textContent = 'Связаться с нами'
+        submitButton.style.backgroundColor = '#0056b3'
+     }
 });
